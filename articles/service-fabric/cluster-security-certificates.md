@@ -44,7 +44,7 @@ The security settings of a Service Fabric cluster describe, in principle, the fo
 - the authentication type; this is a creation-time, immutable characteristic of the cluster. Examples of such settings are 'ClusterCredentialType', 'ServerCredentialType', and allowed values are 'none', 'x509' or 'windows'. This article focuses on the x509-type authentication.
 - the (authentication) validation rules; these settings are set by the cluster owner and describe which credentials shall be accepted for a given role. Examples will be examined in depth immediately below.
 - settings used to tweak or subtly alter the result of authentication; examples here include flags (de-)restricting enforcement of certificate revocation lists etc.
-
+c
 > [!NOTE]
 > Cluster configuration examples provided below are excerpts from the cluster manifest in XML format, as the most-digested format which supports directly the Service Fabric functionality described in this article. The same settings can be expressed directly in the JSON representations of a cluster definition, whether a standalone json cluster manifest, or an Azure Resource Mangement template.
 
